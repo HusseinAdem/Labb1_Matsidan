@@ -147,61 +147,60 @@ main > div {
 }
 
 main > div img {
-    max-width: 150px; /* Maximal bredd på bilderna */
-    height: auto; /* Bevarar bildens proportioner */
+    max-width: 150px; 
+    height: auto; 
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    object-fit: cover; /* Om det behövs kan denna användas för att fylla ut bildytan snyggt */
+    object-fit: cover; 
 }
 
 @media (max-width: 375px) {
     body {
-        font-size: 14px; /* Justera textstorleken för mindre skärmar */
+        font-size: 14px; 
     }
 
     header, .nav, footer {
-        padding: 5px; /* Minska padding för att passa mindre skärmar */
+        padding: 5px; 
     }
 
     .navlist a {
-        padding: 10px 5px; /* Öka klickytan på navigeringslänkarna */
-        display: block; /* Gör länkarna block för att förbättra klickbarheten */
+        padding: 10px 5px; 
+        display: block; 
     }
 
     section {
-        width: 90%; /* Öka bredden på sektionen för att använda mer av skärmytan */
-        margin-bottom: 1rem; /* Minska marginalen under sektionen */
+        width: 90%; 
+        margin-bottom: 1rem; 
     }
 
     .image-gallery {
-        flex-direction: column; /* Visa bilderna i kolumnläge för att passa på smala skärmar */
-        align-items: center; /* Centrerar bilderna horisontellt */
+        flex-direction: column; 
+        align-items: center; 
     }
 
     .image-gallery img {
-        max-width: 100%; /* Gör bilderna responsiva */
-        height: auto; /* Bevarar proportionerna */
-        margin-bottom: 10px; /* Lägger till lite utrymme mellan bilderna */
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 10px; 
     }
 
     .recipe_class {
-        width: 100%; /* Gör att receptklassen fyller hela bredden på skärmen */
+        width: 100%; 
     }
 
     .recipe_class img {
-        width: 100%; /* Gör att bilderna i receptklassen fyller hela bredden på sin container */
-        height: auto; /* Bevarar proportionerna */
-    }
+        width: 100%; 
+        height: auto;
     .image-gallery img {
-        max-width: 100%; /* Gör att bilderna kan bli mindre för att passa skärmen */
-        height: auto; /* Bevarar proportionerna */
+        max-width: 100%; 
+        height: auto; 
     }
     .recipe_class img {
-        width: 100%; /* Gör att bilderna fyller hela bredden på sin container */
-        height: auto; /* Bevarar proportionerna */
+        width: 100%; 
+        height: auto; 
     }
     article h2, .recipe_class h3, .recipe_class h5 {
-        font-size: 1.2em; /* Minska textstorleken om det behövs */
+        font-size: 1.2em;
     }
     
     
