@@ -1,73 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Matsidan</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Matsidan</title>
 
-    <meta name="description" content="På Gazers Matsida delar vi med oss av vår kärlek för matlagning. Upptäck recept för alla smaker och tillfällen och bli en bättre hemmakock.">
+  <meta name="description"
+    content="På Gazers Matsida delar vi med oss av vår kärlek för matlagning. Upptäck recept för alla smaker och tillfällen och bli en bättre hemmakock.">
 
-    <meta name="keywords" content="mat, recept, matlagning, tips, hemmakock, Gazers Matsida, sött, salt, nyttigt, festligt">
+  <meta name="keywords"
+    content="mat, recept, matlagning, tips, hemmakock, Gazers Matsida, sött, salt, nyttigt, festligt">
 
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="meny-style.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="meny-style.css">
 </head>
+
 <body>
-  
 
-        <header>
-          <h1>Gazers Matsida</h1>
-        </header>
-        
+
+  <header>
+    <h1>Gazers Matsida</h1>
+  </header>
+
+  <header>
+    <button class="menu-toggle" aria-label="Meny">☰</button>
+    <nav id="nav">
+      <ul class="navlist">
+        <li><a href="index.html">Hem</a></li>
+        <li><a href="meatballs.html">Köttbullar med mos</a></li>
+        <li><a href="chicken_pasta.html">Kyckling Pasta</a></li>
+        <li><a href="Ajvar_wrap.html">Ajvar Wrap</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="about-us">
+      <article>
+        <h2>Välkommen till Gazers Matsida</h2>
+        <p>På Gazers Matsida delar vi med oss av vår kunskap och kärlek för matlagning. Vi delar med oss av dom bästa
+          tipsen och recepten för att du ska bli en bättre hemmakock.</p>
+        <p>Vi har recept för alla smaker och tillfällen. Vare sig du är sugen på något sött, salt, nyttigt eller
+          festligt så har vi något för dig.</p>
+        <p>Vi hoppas att du ska hitta något som passar just dig och att du ska bli inspirerad att laga mat hemma.</p>
       
-        <header>
-          <button class="menu-toggle" aria-label="Meny">☰</button>
-          <nav id="nav">
-            <ul class="navlist">
-              <li><a href="index.html" target="_blank">Hem</a></li>
-              <li><a href="meatballs.html" target="_blank">Köttbullar med mos</a></li>
-              <li><a href="chicken_pasta.html" target="_blank">Kyckling Pasta</a></li>
-              <li><a href="Ajvar_wrap.html" target="_blank">Ajvar Wrap</a></li>
-            </ul>
-          </nav>
-        </header>
+      <aside>
+        <p>Du kan även maila in recept till oss!</p>
+        <form>
+          <label for="name">Namn:</label><br>
+          <input type="text" id="name" name="name"><br>
+          <label for="email">E-post:</label><br>
+          <input type="email" id="email" name="email"><br>
+          <label for="message">Meddelande:</label><br>
+          <textarea id="message" name="message"></textarea><br>
+          <button type="submit">Skicka</button>
+        </form>
+      </aside>
+    </article>
+    </section>
 
-      <main>
+    <div class="image-gallery">
+      <img src="bilder/chicken_pasta.webp" alt="kyckling pasta">
+      <img src="bilder/meatballs.jpg" alt="sallad">
+      <img src="bilder/ajvar_wrap.webp" alt="dessert">
+    </div>
+  </main>
 
-        <section class="about-us">
-          <article>
-            <h2>Välkommen till Gazers Matsida</h2>
-            <p>På Gazers Matsida delar vi med oss av vår kunskap och kärlek för matlagning. Vi delar med oss av dom bästa tipsen och recepten för att du ska bli en bättre hemmakock.</p>
-            <p>Vi har recept för alla smaker och tillfällen. Vare sig du är sugen på något sött, salt, nyttigt eller festligt så har vi något för dig.</p>
-            <p>Vi hoppas att du ska hitta något som passar just dig och att du ska bli inspirerad att laga mat hemma.</p>
-          </article>
-          <aside>
-            <p>Du kan även maila in recept till oss!</p>
-            <form>
-              <label for="name">Namn:</label><br>
-              <input type="text" id="name" name="name"><br>
-              <label for="email">E-post:</label><br>
-              <input type="email" id="email" name="email"><br>
-              <label for="message">Meddelande:</label><br>
-              <textarea id="message" name="message"></textarea><br>
-              <button type="submit">Skicka</button>
-          </form>
-          </aside>
-          
-            
-          
-        </section>
-        <div class="image-gallery">
-          <img src="bilder/chicken_pasta.webp" alt="kyckling pasta">
-          <img src="bilder/meatballs.jpg" alt="sallad">
-          <img src="bilder/ajvar_wrap.webp" alt="dessert">
-      </div>
-      </main>
+  <footer>
+    <p>&copy; 2024 Gazers Matsida. Alla rättigheter reserverade.</p>
+  </footer>
+  <script src="menu-script.js"></script>
 
-      <footer>
-        <p>&copy; 2024 Gazers Matsida. Alla rättigheter reserverade.</p>
-    </footer>
-    <script src="menu-script.js"></script>
-    
 </body>
+
 </html>
